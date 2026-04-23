@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Vital Care System</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo"><i class="fas fa-heartbeat"></i> <span>Vital Care</span></div>
+            <nav>
+                <a href="#" class="active"><i class="fas fa-user-circle"></i> My Profile</a>
+                <a href="#"><i class="fas fa-file-medical"></i> Records</a>
+                <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1 id="welcome-msg">Welcome!</h1>
+                <div class="user-badge">
+                    <span id="user-email-top"></span>
+                    <div class="avatar"><i class="fas fa-user"></i></div>
+                </div>
+            </header>
+
+            <section class="profile-section">
+                <h2><i class="fas fa-id-card"></i> Personal Information</h2>
+                <div class="profile-grid">
+                    <div class="info-box">
+                        <label>Full Name</label>
+                        <p id="prof-name">--</p>
+                    </div>
+                    <div class="info-box">
+                        <label>Email Address</label>
+                        <p id="prof-email">--</p>
+                    </div>
+                    <div class="info-box">
+                        <label>Phone Number</label>
+                        <p id="prof-phone">--</p>
+                    </div>
+                    <div class="info-box">
+                        <label>Date of Birth</label>
+                        <p id="prof-dob">--</p>
+                    </div>
+                    <div class="info-box">
+                        <label>Blood Type</label>
+                        <p id="prof-blood" class="highlight-red">--</p>
+                    </div>
+                    <div class="info-box full-width">
+                        <label>Known Allergies</label>
+                        <p id="prof-allergies">--</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="vital-chat-icon" class="chat-icon">
+        <i class="fas fa-robot"></i>
+        <span class="notification-dot"></span>
+    </div>
+
+    <div id="chat-popup" class="chat-popup hidden">
+        <div class="chat-header">
+            <h3>Vital Chat AI</h3>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <p><strong>AI:</strong> Hello! I'm Vital Care Intelligent ChatBot. I'm learning how to help you with your specific medical needs.</p>
+            <p class="status">Coming Soon...</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Ask about your health..." disabled>
+            <button disabled><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
