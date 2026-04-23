@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vital Care System</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <div class="form">
+                <h2>Create Account</h2>
+                <input type="text" id="signup_username" placeholder="Username" required>
+                <input type="email" id="signup_email" placeholder="Email" required>
+                <input type="password" id="signup_password" placeholder="Password" required>
+                <input type="tel" id="signup_phone" placeholder="Phone">
+                <input type="date" id="signup_dob">
+                <input type="text" id="signup_blood_type" placeholder="Blood Type">
+                <input type="text" id="signup_allergies" placeholder="Allergies">
+                <button class="signUp">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <div class="form">
+                <h2>Sign In</h2>
+                <input type="email" id="login_email" placeholder="Email">
+                <input type="password" id="login_password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button class="signIn">Sign In</button>
+            </div>
+        </div>
+
+        <div class="overlay_container">
+            <div class="overlay">
+                <div class="overlay_panel overlay_left_container">
+                    <h2>Welcome Back!</h2>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button id="sign-in">Sign In</button>
+                </div>
+                <div class="overlay_panel overlay_right_container">
+                    <h2>Hello, Friend!</h2>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="sign-up">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
